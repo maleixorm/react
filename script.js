@@ -33,3 +33,32 @@ function entrarNovamente(nome, idade) {
     let texto = prompt('Digite seu sobrenome: ');
     area.innerHTML = nome + ' ' + texto + ' - ' + idade + ' anos.';
 }
+
+document.getElementById('menu').innerHTML = (`
+        <br>Escolha seu pedido:<br>
+        <br>0 - Sorvete<br>
+        <br>1 - Suco<br>
+        <br>2 - Refrigerante<br>
+        <br>3 - Agua com Gás<br>
+`);
+
+function pedir() {
+    x = prompt("O que deseja pedir? ");
+
+    switch (x) {
+        case "0":
+            alert('Você pediu Sorvete');
+            break;
+        case "1":
+            alert('Você pediu Suco');
+            break;
+        case "2":
+            alert('Você pediu Coca-Cola');
+            break;
+        case "3":
+            alert('Você pediu Água São Lourenço');
+            break;
+        default:
+            alert('Ops! Não temos essa opção!');
+    }
+}
