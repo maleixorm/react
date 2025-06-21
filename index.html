@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Aprendendo JavaScript</h1>
-    <button onclick="window.location.href = 'contato.html'; ">Ir para contato</button>
-    <button onclick="window.location.href = window.location.href ">Atualizar</button>
+
 
     <div id="area">
         Bem vindo ...
     </div>
+    
+    <br>
+    
+    <button onclick="entrar()">Entrar</button>
 
-    <button onclick="document.getElementById('area').innerHTML = 'Bem vindo ' + prompt('Qual o seu nome? ')">Entrar</button>
+    <!-- Segundo método -->
+
+    <div id="nova_area">
+        Bem vindo ...
+    </div>
+    
+    <br>
+    
+    <button onclick="entrarNovamente('Marcos', 37)">Entrar</button>
+
 </body>
 </html>
