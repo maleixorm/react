@@ -10,5 +10,11 @@
     <h1>Aprendendo JavaScript</h1>
     <button onclick="window.location.href = 'contato.html'; ">Ir para contato</button>
     <button onclick="window.location.href = window.location.href ">Atualizar</button>
+
+    <div id="area">
+        Bem vindo ...
+    </div>
+
+    <button onclick="document.getElementById('area').innerHTML = 'Bem vindo ' + prompt('Qual o seu nome? ')">Entrar</button>
 </body>
 </html>
