@@ -62,3 +62,19 @@ function pedir() {
             alert('Ops! Não temos essa opção!');
     }
 }
+
+function cadastroPessoa(info) {
+    let novosDados = {
+        ...info,
+        cargo: 'Programador',
+        status: true,
+        codigo: '6544645213'
+    }
+    return novosDados;
+}
+
+console.log(cadastroPessoa({
+    nome: 'Matheus',
+    sobrenome: 'Fraga',
+    anoInicio: 2025
+}));
